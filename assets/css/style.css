@@ -1,16 +1,39 @@
 header {
   background-color: #ffffff;
-  min-height: 7.5vh;
   border-bottom: 8px solid #cccccc;
   font-family: 'Georgia', Times, 'Times New Roman', serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+html, body {
+  height: 100%
 }
 
 body {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  display: flex; 
+  flex-direction: column;
 }
 
 footer {
-  min-height: 7.5vh;
   border-top: 8px solid #4aaaa5;
   background-color: #666666;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.heading {
+  background-color: #4aaaa5;
+}
+
+#navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
 }
