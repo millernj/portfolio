@@ -61,8 +61,8 @@ footer {
   font-size: 16px;
 }
 
-button.not-first {
-  border-left: 2px solid #eee;
+.navigation-button:not(:first-child) {
+  border-left: 1px solid #ddd;
 }
 
 #page-name-heading {
