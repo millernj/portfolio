@@ -1,39 +1,93 @@
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
 header {
   background-color: #ffffff;
   border-bottom: 8px solid #cccccc;
-  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-html, body {
-  height: 100%
-}
-
-body {
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  display: flex; 
-  flex-direction: column;
+  justify-content: center;
 }
 
 footer {
   border-top: 8px solid #4aaaa5;
   background-color: #666666;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: auto;
   flex-shrink: 0;
 }
 
-.content {
-  flex: 1 0 auto;
+.content, .header-bar {
+  width: 960px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-.heading {
+.content {
+  /* flex: 1 0 auto; */
+  /* flex-direction: column;
+  flex-grow: 1; */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navigation-button {
+  /* flex-grow: 1; */
+}
+
+.page-name-heading {
   background-color: #4aaaa5;
+  color: #ffffff;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#content-header {
+  color: #4aaaa5;
+
+  width: 100vw;
+  padding-bottom: 30px;
+  border-bottom: 4px solid #cccccc;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#content-wrapper {
+  width: 100vw;
+  background-image: url("../images/content-background.png");
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 1;
 }
 
 #navigation {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+}
 
+#footer-text {
+  position: relative;
+  bottom: 0;
+  clear: both;
 }
