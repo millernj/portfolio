@@ -25,11 +25,13 @@ footer {
   height: 70px;
   text-align: center;
   color: #fff;
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   flex-shrink: 0;
 }
 
-.content, .header-bar {
+.header-bar {
   width: 960px;
   display: flex;
   flex-flow: row wrap;
@@ -37,9 +39,8 @@ footer {
 }
 
 .content {
-  /* flex: 1 0 auto; */
-  /* flex-direction: column;
-  flex-grow: 1; */
+  max-width: 960px;
+  min-width: 540px;
   margin: 20px auto;
   padding: 20px;
   line-height: 2;
@@ -90,18 +91,13 @@ button.not-first {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  flex: 1;
-  overflow: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  overflow: scroll;
 }
 
 #navigation {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-}
-
-#footer-text {
-  position: relative;
-  bottom: 0;
-  clear: both;
 }
