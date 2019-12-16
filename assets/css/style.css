@@ -39,6 +39,7 @@ nav {
 }
 
 button {
+  outline: none;
   border: none;
   color: #777;
   margin: 20px 0;
@@ -60,8 +61,7 @@ button:not(:first-child) {
 }
 
 .content {
-  max-width: 960px;
-  min-width: 540px;
+  width: 960px;
   margin: 20px auto;
   padding: 20px;
   line-height: 2;
