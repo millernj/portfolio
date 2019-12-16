@@ -42,6 +42,7 @@ footer {
   flex-grow: 1; */
   margin: 20px auto;
   padding: 20px;
+  line-height: 2;
   background-color: #ffffff;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -52,17 +53,20 @@ footer {
   /* flex-grow: 1; */
 }
 
-.page-name-heading {
+#page-name-heading {
   background-color: #4aaaa5;
   color: #ffffff;
   padding-left: 2%;
   padding-right: 2%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #content-header {
   color: #4aaaa5;
 
-  width: 100vw;
+  width: 100%;
   padding-bottom: 30px;
   border-bottom: 4px solid #cccccc;
   -webkit-box-sizing: border-box;
@@ -78,6 +82,7 @@ footer {
   flex-direction: column;
   justify-content: start;
   flex: 1;
+  overflow: auto;
 }
 
 #navigation {
