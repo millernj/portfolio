@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
   <title>Noah's Portfolio</title>
 </head>
 
@@ -26,12 +27,23 @@
   </header>
   <div id="content-wrapper" class="clearfix">
     <section class="content">
-      <ul>
-        <li>pizza</li>
-        <li>pizza</li>
-        <li>pizza</li>
-        <li>pizza</li>
-      </ul>
+      <h2 id="content-header">
+        Contact
+      </h2>
+      <form id="contact-form">
+
+        <label>Name</label>
+        <input class="contact-input" type="text" placeholder="Your name">
+    
+        <label>Email</label>
+        <input class="contact-input" type="text" placeholder="example@gmail.com">
+
+        <label>Message</label>
+        <textarea class="contact-input" id="contact-message"></textarea>
+    
+        <input id="submit" type="submit" value="Submit">
+    
+      </form>
     </section>
   </div>
   <footer>
