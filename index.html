@@ -12,66 +12,69 @@
   <title>Noah's Portfolio</title>
 </head>
 
-<body>
-  <div class="container">
-    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #fff; padding: 0;">
-      <div class="header container">
-        <a class="navbar-brand page-name-heading col-sm-2" style="color: #fff" href="index.html">
+<body class="d-flex flex-column">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm navbar-light header" style="background-color: #fff; padding: 0;">
+      <div class="container no-gutters">
+        <a class="navbar-brand page-name-heading col-sm-2 col" style="color: #fff" href="index.html">
           Noah Miller
         </a>
-        <div class="col-sm-6"></div>
-        <ul class="navbar-nav mr-auto col-sm-4 row align-items-center">
-          <li class="nav-item col-3">
-            <a class="nav-link" href="index.html">
-              About
-            </a>
-          </li>
-          <li class="nav-item col-6">
-            <a class="nav-link" href="contact.html">
-              Contact Me
-            </a>
-          </li>
-          <li class="nav-item col-3">
-            <a class="nav-link" href="portfolio.html">
-              Portfolio
-            </a>
-          </li>
-      </div>
+        <div class="col-auto d-none d-sm-block"></div>
+        <div class="col-sm-4 col-xs-12">
+          <ul class="navbar-nav row flex-nowrap justify-content-end">
+            <li class="nav-item col-auto">
+              <a class="nav-link" href="index.html">
+                About
+              </a>
+            </li>
+            <li class="nav-item col-auto">
+              <a class="nav-link" href="portfolio.html">
+                Portfolio
+              </a>
+            </li>
+            <li class="nav-item col-auto">
+              <a class="nav-link" href="contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
     </nav>
-    <div id="content-wrapper" class="clearfix">
-      <section class="content">
-        <h2 id="content-header">
-          About Me
-        </h2>
-        <img id="profile-picture" src="./assets/images/profile-picture.png" alt="A picture of Noah Miller">
-        <article>
-          <p>
-            I'm a full-stack software developer based in Santa Monica. My journey into this space essentially began
-            with python which I utilized for data analysis in my research to get my undergraduate physics degree.
-            With python, I got a fairly basic introduction to core programming concepts like loops, functions,
-            version control, etc., and started to appreciate the seemingly limitless potential of software.
-          </p>
-          <p>
-            Once I was out of school, I found work as a IT help desk / data analyst contractor at Cypress Creek
-            Renewables
-            (CCR) which, after my ambition for programming garnered the attention of the software development team,
-            transitioned quickly into a junior, full-stack developer job. At CCR, I've gotten into a little bit of
-            everything:
-            AngularJS, Angular, Bootstrap, React-redux, Express, MongoDB, PostgreSQL, Kubernetes, AWS Lambdas, and s3.
-          </p>
-          <p>
-            I'm currently furthering my education in the software engineering space through the UCLA Extensions
-            full-stack web development bootcamp.
-          </p>
-        </article>
-      </section>
-    </div>
-    <footer>
-      <p>
-        © 2019 Noah Miller
-      </p>
-    </footer>
   </div>
+  <div id="content-wrapper">
+    <section class="content container">
+      <h2 id="content-header">
+        About Me
+      </h2>
+      <img id="profile-picture" src="./assets/images/profile-picture.png" alt="A picture of Noah Miller">
+      <article>
+        <p>
+          I'm a full-stack software developer based in Santa Monica. My journey into this space essentially began
+          with python which I utilized for data analysis in my research to get my undergraduate physics degree.
+          With python, I got a fairly basic introduction to core programming concepts like loops, functions,
+          version control, etc., and started to appreciate the seemingly limitless potential of software.
+        </p>
+        <p>
+          Once I was out of school, I found work as a IT help desk / data analyst contractor at Cypress Creek
+          Renewables
+          (CCR) which, after my ambition for programming garnered the attention of the software development team,
+          transitioned quickly into a junior, full-stack developer job. At CCR, I've gotten into a little bit of
+          everything:
+          AngularJS, Angular, Bootstrap, React-redux, Express, MongoDB, PostgreSQL, Kubernetes, AWS Lambdas, and s3.
+        </p>
+        <p>
+          I'm currently furthering my education in the software engineering space through the UCLA Extensions
+          full-stack web development bootcamp.
+        </p>
+      </article>
+    </section>
+  </div>
+  </div>
+  <footer class="footer">
+    <p>
+      © 2019 Noah Miller
+    </p>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

@@ -1,9 +1,13 @@
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  /* height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  margin: 0;
+}
+
+body div.container-fluid {
+  padding: 0;
 }
 
 button, label {
@@ -46,19 +50,18 @@ label:not(:first-child) {
   margin-top: 0.5em;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-}
+} */
 
 .contact-input {
   border: 1px solid #ddd;
 }
 
 .content {
-  max-width: 960px;
   margin: 20px auto;
   padding: 20px;
   line-height: 2;
@@ -75,13 +78,6 @@ ul {
   display: table;
 }
 
-.header-bar {
-  width: 960px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
 .header {
   background-color: #fff;
   border-bottom: 8px solid #ccc;
@@ -91,19 +87,30 @@ ul {
 }
 
 a.nav-link {
-  padding: 0px 8px;
-  text-align: center;
+  padding: 0;
 }
-/* 
+
+ul.navbar-nav {
+  margin: 0;
+}
+
+ul li.nav-item {
+  text-align: center;
+  padding: 0;
+}
+
 ul li.nav-item:not(:first-child) {
   border-left: 1px solid #ddd;
-} */
+}
 
 .page-name-heading {
   font-family: 'Georgia', Times, 'Times New Roman', serif;
+  min-width: 156px;
   background-color: #4aaaa5;
+  text-align: center;
   color: #fff;
   padding: 0.5em 22px;
+  margin: auto 0;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -171,12 +178,8 @@ ul li.nav-item:not(:first-child) {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  flex-grow: 1;
-  flex-shrink: 0;
-  overflow: auto;
+  flex: 1 0 auto;
 }
-
-
 
 #profile-picture {
   float: left;
