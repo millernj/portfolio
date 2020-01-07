@@ -98,7 +98,7 @@ ul li.nav-item {
   padding: 0;
 }
 
-ul li.nav-item:not(:first-child) {
+.nav-divider {
   border-left: 1px solid #ddd;
 }
 
