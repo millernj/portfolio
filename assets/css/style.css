@@ -79,7 +79,8 @@ ul.project-list {
 
 .header {
   background-color: #fff;
-  border-bottom: 8px solid #ccc;
+  border-bottom: 4px solid #ccc;
+  padding: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -107,7 +108,6 @@ ul li.nav-item {
   min-width: 156px;
   background-color: #4aaaa5;
   text-align: center;
-  color: #fff;
   padding: 0.5em 22px;
   margin: auto 0;
   -webkit-box-sizing: border-box;
@@ -128,6 +128,7 @@ ul li.nav-item {
   position: relative;
   margin: 20px;
   transition: transform .2s;
+  text-align: center;
 }
 
 .project:hover { 
@@ -140,7 +141,15 @@ ul li.nav-item {
   text-align: center;
   position: absolute;
   bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
+  max-width: 350px;
+}
+
+.project-name h3 {
+  margin: 8px auto;
+  font-size: 1.2rem;
 }
 
 .project-picture {
