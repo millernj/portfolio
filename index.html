@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./assets/css/reset.css">
+  <script src="https://kit.fontawesome.com/59b70a7e30.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -63,13 +64,33 @@
           (CCR) which, after my ambition for programming garnered the attention of the software development team,
           transitioned quickly into a junior, full-stack developer job. At CCR, I've gotten into a little bit of
           everything:
-          AngularJS, Angular, Bootstrap, React-redux, Express, MongoDB, PostgreSQL, Kubernetes, AWS Lambdas, and s3.
+          Angular, Bootstrap, React-redux, Express, MongoDB, PostgreSQL, Kubernetes, and AWS Lambdas.
         </p>
         <p>
           I'm currently furthering my education in the software engineering space through the UCLA Extensions
           full-stack web development bootcamp.
         </p>
       </article>
+    </section>
+    <section class="content container">
+      <h3 id="links" class="d-flex justify-content-around">
+        <br>
+        <a href="https://github.com/millernj/" target="_blank" data-toggle="tooltip" data-placement="top"
+          title="Github">
+          <i class="fab fa-github"></i>
+        </a>
+        <div class="nav-divider"></div>
+        <a href="https://www.linkedin.com/in/noah-jan-miller/" target="_blank" data-toggle="tooltip"
+          data-placement="top" title="Linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <div class="nav-divider"></div>
+        <a href="./assets/resume.pdf" target="_blank" data-toggle="tooltip" data-placement="top" title="Resume">
+          <i class="fas fa-file-invoice"></i>
+        </a>
+        <br>
+      </h3>
+      </i>
     </section>
   </div>
   <footer class="footer">
@@ -86,6 +107,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+  </script>
 </body>
 
 </html>
