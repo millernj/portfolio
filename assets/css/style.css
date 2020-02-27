@@ -170,6 +170,7 @@ ul li.nav-item {
 
 .project-name a:hover, footer a:hover {
   color: #ddd;
+  text-decoration: none;
 }
 
 .project-picture {
@@ -228,6 +229,7 @@ ul li.nav-item {
 
 #links a:hover {
   color: #3b8783;
+  text-decoration: none;
 }
 
 #submit {
